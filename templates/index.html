@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Flask Auth System{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center p-5 rounded-4 shadow-sm">
+    <h1 class="display-5 fw-bold mb-3">Simple Login / Registration System</h1>
+    <p class="lead text-muted mb-4">A beginner-friendly Python Flask authentication project using SQLite, sessions, and password hashing.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg px-4">Create Account</a>
+        <a href="{{ url_for('login') }}" class="btn btn-outline-dark btn-lg px-4">Login</a>
+    </div>
+</div>
+{% endblock %}
